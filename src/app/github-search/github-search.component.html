@@ -1,4 +1,31 @@
-
+<div class="container-fluid">
+  <div class="jumbotron">
+    <h1>GITHUB-SEARCH</h1>
+  </div>
+  <app-github-search-form></app-github-search-form>
+  <div class="row">
+    <div class="col-md-3">
+      <img src="{{user.avatar_url}}" height="300" class="img-circle">
+    </div>
+    <div class="col-md-6">
+      <table>
+        <tr>
+          <td *ngIf='user.name'>Name: </td>
+          <td class="label" *ngIf='user.name'>{{user.name}}</td>
+        </tr>
+        <tr>
+          <td>username: </td>
+          <td class="label">{{user.login}}</td>
+        </tr>
+        <tr>
+          <td *ngIf='user.email'>Email Information: </td>
+          <td class="label" *ngIf='user.email'>{{user.email}}</td>
+        </tr>
+      </table>
+    </div>
+  </div>
+  <a href="{{user.html_url}}" class="btn btn-primary" id="view">Check Profile</a>
+  <hr>
 
 
 
