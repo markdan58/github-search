@@ -1,0 +1,18 @@
+.img-circle {
+  border-radius: 600px;
+  float: right;
+  margin-right: 20px;
+  margin-bottom: 20px;
+}
+
+#title {
+  text-align: center
+}
+table {
+
+  border-style: outset;
+  border-width: 1px;
+  width: 50%;
+  height: 50%;
+  text-align: center
+}

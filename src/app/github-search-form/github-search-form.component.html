@@ -1,11 +1,2 @@
 <!-- Search Input -->
 
-
-
-<form (ngSumbit)="onsubmitsearch()" #githubForm='ngForm'>
-  <div class="form-group">
-    <input type="text" placeholder="Search.." class="form-control"  name="name" id="search" [(ngModel)]="username" #nameofuser="ngModel">
-    <button type="submit" class="btn btn-primary">Search</button>
-  </div>
-  {{username}}
-</form>

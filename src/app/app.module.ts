@@ -5,6 +5,8 @@ import { HttpClientModule } from '@angular/common/http'
 import { AppComponent } from './app.component';
 import { GithubSearchComponent } from './github-search/github-search.component';
 import { GithubSearchFormComponent } from './github-search-form/github-search-form.component';
+import {githubservice} from './githubservice-http/service.service';
+
 
 @NgModule({
   declarations: [
@@ -18,7 +20,7 @@ import { GithubSearchFormComponent } from './github-search-form/github-search-fo
     FormsModule,
     HttpClientModule
   ],
-  providers: [],
+  providers: [githubservice],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
