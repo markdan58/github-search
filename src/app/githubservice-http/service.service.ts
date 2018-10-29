@@ -20,3 +20,13 @@ export class githubservice {
 
 
   }
+
+  getgithubSearch(username) {
+    interface ApiResponse {
+      name: string;
+      login: string;
+      avatar_url: string;
+      email: string;
+      public_repos: number;
+      html_url: string;
+    }
