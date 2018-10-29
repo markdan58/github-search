@@ -30,3 +30,18 @@ export class githubservice {
       public_repos: number;
       html_url: string;
     }
+
+    const promise = new Promise((resolve, reject) => {
+      this.http.get<ApiResponse>(environment.apiKey + username + environment.apiKey).toPromise().then(githubsearch => {
+
+        this.user.name = githubsearch.name;
+        this.user.login = githubsearch.login;
+        this.user.avatar_url = githubsearch.avatar_url;
+        this.user.email = githubsearch.email;
+        this.user.public_repos = githubsearch.public_repos;
+        this.user.html_url = githubsearch.html_url;
+
+        console.log(githubsearch);
+
+        resolve();
+      },
