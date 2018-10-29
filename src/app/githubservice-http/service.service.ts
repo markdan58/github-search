@@ -13,3 +13,10 @@ export class githubservice {
   user: User;
   private username: string;
   items;
+
+  constructor(private http: HttpClient) {
+    this.user = new User(' ', ' ', ' ', ' ', 0, ' ');
+    this.repository = new Repository(' ', ' ', ' ', ' ');
+
+
+  }
