@@ -6,7 +6,7 @@ This project involves the creation of a website where one can search github user
 ## Project setup instructions:
 NO setup instructions
 
-## link to the live site: <a href="https://github.com/markdan58/github-search> GITHUB-SEARCH <a>
+## link to the live site: <a href="https://github.com/markdan58/github-search"> GITHUB-SEARCH <a>
 
 ## Built With
 
