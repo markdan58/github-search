@@ -45,3 +45,24 @@ export class githubservice {
 
         resolve();
       },
+      );
+    });
+
+    return promise;
+  }
+
+  getRepository(username) {
+    interface ApiResponse {
+      name: string;
+      homepage: string;
+      description: string;
+      html_url: string;
+    }
+    this.http.get<ApiResponse>(environment.apiKey + username + environment.apiKey).subscribe(response => {
+
+      this.items = response;
+
+    });
+  }
+
+}
